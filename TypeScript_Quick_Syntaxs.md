@@ -166,3 +166,7 @@ import { ZipCodeValidator } from "./ZipCodeValidator";
 // Using
 let myValidator = new ZipCodeValidator();
 ```
+
+---
+**Tham khảo:**
+https://techmaster.vn/posts/34286/hoc-typescript-trong-30-phut
