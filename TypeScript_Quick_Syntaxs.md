@@ -1,5 +1,20 @@
 # TypeScript Cú pháp nhanh
 
+<!-- TOC -->
+
+- [TypeScript Cú pháp nhanh](#typescript-cú-pháp-nhanh)
+    - [Variable - Biến](#variable---biến)
+        - [Type - Kiểu biến](#type---kiểu-biến)
+        - [Declaration - Khai báo](#declaration---khai-báo)
+    - [Function - Hàm chức năng](#function---hàm-chức-năng)
+    - [Interfaces](#interfaces)
+    - [Class](#class)
+    - [Extend - Kế thừa](#extend---kế-thừa)
+    - [Generics - kiểu chung T](#generics---kiểu-chung-t)
+    - [Modules - Gọi hàm ngoài](#modules---gọi-hàm-ngoài)
+
+<!-- /TOC -->
+
 ## Variable - Biến
 
 ### Type - Kiểu biến
