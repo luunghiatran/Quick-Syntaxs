@@ -12,6 +12,7 @@
     - [Extend - Kế thừa](#extend---kế-thừa)
     - [Generics - kiểu chung T](#generics---kiểu-chung-t)
     - [Modules - Gọi hàm ngoài](#modules---gọi-hàm-ngoài)
+    - [Lambda - Biểu thức nhanh](#lambda---biểu-thức-nhanh)
 
 <!-- /TOC -->
 
@@ -19,12 +20,26 @@
 
 ### Type - Kiểu biến
 
-Any (kiểu tự do)
 Number(float+int)
 String
 Boolean
-Arrays Có 2 kiểu cú pháp: ```my_arr: number[];``` hoặc ```my_arr: Array<number>.```
+Arrays Có 2 kiểu cú pháp: 
+
+```ts
+my_arr: number[];
+my_arr: Array<number> = [2, 3, 5, 7];
+```
+
+Enum
+
+```ts
+enum Role {Employee, Manager, Administrator};
+var role: Role = Role.Employee; //Using
+```
+
+Any (kiểu tự do)
 Void - Hàm không trả về
+
 
 ### Declaration - Khai báo
 
@@ -36,6 +51,13 @@ var burger: string = 'hamburger',     // String
 // Alternatively, you can omit the type declaration:
 var burger = 'hamburger';
 
+// String expression
+var str = `${title} costs ${price}`;
+// nhiều dòng
+var html = `<html>
+              <body>
+              </body>
+            </html>`;
 ```
 
 ## Function - Hàm chức năng
@@ -180,6 +202,19 @@ import { ZipCodeValidator } from "./ZipCodeValidator";
 
 // Using
 let myValidator = new ZipCodeValidator();
+```
+
+## Lambda - Biểu thức nhanh
+
+```ts
+var product = ["Apple", "Lemon", "Banana"];
+//javasript
+product.forEach(function(p) {
+    console.log(p);
+});
+
+//typescript
+product.forEach( (p) => console.log(p) );
 ```
 
 ---
