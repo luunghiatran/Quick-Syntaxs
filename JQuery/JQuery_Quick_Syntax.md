@@ -1,5 +1,24 @@
 # JQuery Cú pháp cơ bản
 
+- [JQuery Cú pháp cơ bản](#JQuery-C%C3%BA-ph%C3%A1p-c%C6%A1-b%E1%BA%A3n)
+  - [Chạy sau khi tải xong trang](#Ch%E1%BA%A1y-sau-khi-t%E1%BA%A3i-xong-trang)
+  - [Selector - chọn tag](#Selector---ch%E1%BB%8Dn-tag)
+    - [Selector with index](#Selector-with-index)
+    - [Selector with child](#Selector-with-child)
+    - [Selector with Content](#Selector-with-Content)
+    - [Selector with form](#Selector-with-form)
+    - [Đối với selector truyền Index:](#%C4%90%E1%BB%91i-v%E1%BB%9Bi-selector-truy%E1%BB%81n-Index)
+  - [JQUERY ATTRIBUTES](#JQUERY-ATTRIBUTES)
+    - [_Style - Class](#Style---Class)
+    - [_Element](#Element)
+  - [DOM TRAVERSING](#DOM-TRAVERSING)
+  - [CSS SELECTOR METHOD](#CSS-SELECTOR-METHOD)
+  - [EVEN HANDLING](#EVEN-HANDLING)
+    - [_Add event](#Add-event)
+    - [_Remove Event](#Remove-Event)
+    - [_Evens Method](#Evens-Method)
+  - [AJAX - REQUEST Data NOT LOAD Page](#AJAX---REQUEST-Data-NOT-LOAD-Page)
+
 ## Chạy sau khi tải xong trang
 
 ```js

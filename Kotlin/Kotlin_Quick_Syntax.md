@@ -21,9 +21,10 @@
     - [1.10.1. interface](#1101-interface)
     - [1.10.2. Lớp trừu tượng](#1102-L%E1%BB%9Bp-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng)
     - [1.10.3. Override - Kế thừa](#1103-Override---K%E1%BA%BF-th%E1%BB%ABa)
-    - [1.10.4. Generic - T type](#1104-Generic---T-type)
-    - [1.10.5. Enum](#1105-Enum)
-    - [1.10.6. Khác](#1106-Kh%C3%A1c)
+    - [1.10.4. Call in Class](#1104-Call-in-Class)
+    - [1.10.5. Generic - T type](#1105-Generic---T-type)
+    - [1.10.6. Enum](#1106-Enum)
+    - [1.10.7. Khác](#1107-Kh%C3%A1c)
   - [1.11. PACKAGE](#111-PACKAGE)
   - [1.12. Special](#112-Special)
     - [1.12.1. Gọi đa phưong thức khởi tạo](#1121-G%E1%BB%8Di-%C4%91a-ph%C6%B0ong-th%E1%BB%A9c-kh%E1%BB%9Fi-t%E1%BA%A1o)
@@ -59,7 +60,7 @@ val PI : Int = 3.14    //constant
 val bigInt = Int.MAX_VALUE
 if (age is Int){}    // so sánh kiểu
 
-public 
+public
 private
 protected //=private, visible in subclass
 internal // visible inside the same module
@@ -300,11 +301,17 @@ class Man(name:String) : Person(name), Foo...
 _Override method
 override fun...
 override val...
+```
+
+### 1.10.4. Call in Class
+
+```java
+this.fun    // Call current
 super.fun, super("a")  //Call parent
 super<Foo>.  //Call with parent name
 ```
 
-### 1.10.4. Generic - T type
+### 1.10.5. Generic - T type
 
 ```java
 class Box<T>(t:T) { var value = t }
@@ -319,7 +326,7 @@ class Outer {
 Outer().Inner().   //call
 ```
 
-### 1.10.5. Enum
+### 1.10.6. Enum
 
 ```java
 enum class Move {
@@ -329,7 +336,7 @@ enum class Move {
 Move.UP //Using
 ```
 
-### 1.10.6. Khác
+### 1.10.7. Khác
 
 ```java
 //Lớp dữ liệu java, tạo sẵn getter, setter, toString, hashCode

@@ -1,10 +1,76 @@
-# Javascript tóm tắt cú pháp
+# 1. Javascript tóm tắt cú pháp
 
-## FILE TYPE
+- [1. Javascript tóm tắt cú pháp](#1-Javascript-t%C3%B3m-t%E1%BA%AFt-c%C3%BA-ph%C3%A1p)
+	- [1.1. FILE TYPE](#11-FILE-TYPE)
+	- [1.2. HELLO WORLD](#12-HELLO-WORLD)
+	- [1.3. COMMENT](#13-COMMENT)
+	- [1.4. VARIABLE](#14-VARIABLE)
+		- [1.4.1. _Declare Variable](#141-Declare-Variable)
+		- [1.4.2. _Assign Variable](#142-Assign-Variable)
+		- [1.4.3. _Constant/ final](#143-Constant-final)
+		- [1.4.4. _Check Variable Type](#144-Check-Variable-Type)
+	- [1.5. OBJECT](#15-OBJECT)
+		- [1.5.1. _Create Object](#151-Create-Object)
+		- [1.5.2. _Add new properties](#152-Add-new-properties)
+		- [1.5.3. _Object Constructor - tạo cấu trúc Object - like Class](#153-Object-Constructor---t%E1%BA%A1o-c%E1%BA%A5u-tr%C3%BAc-Object---like-Class)
+		- [1.5.4. _Add Reference, method - thêm thuộc tính, phương thức](#154-Add-Reference-method---th%C3%AAm-thu%E1%BB%99c-t%C3%ADnh-ph%C6%B0%C6%A1ng-th%E1%BB%A9c)
+		- [1.5.5. _Declare Object](#155-Declare-Object)
+		- [1.5.6. _Kế thừa](#156-K%E1%BA%BF-th%E1%BB%ABa)
+		- [1.5.7. _Check Instance - kiểm tra Kiểu dữ liệu](#157-Check-Instance---ki%E1%BB%83m-tra-Ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u)
+		- [1.5.8. _Pass by reference, thay đổi thuộc tính qua reference ra khỏi method](#158-Pass-by-reference-thay-%C4%91%E1%BB%95i-thu%E1%BB%99c-t%C3%ADnh-qua-reference-ra-kh%E1%BB%8Fi-method)
+	- [1.6. ENUM](#16-ENUM)
+	- [1.7. OPERATOR](#17-OPERATOR)
+		- [1.7.1. _Bitwise Operators](#171-Bitwise-Operators)
+	- [1.8. STRING](#18-STRING)
+	- [1.9. ARRAY](#19-ARRAY)
+		- [1.9.1. _Declare](#191-Declare)
+		- [1.9.2. _Get Item + Functions](#192-Get-Item--Functions)
+	- [1.10. DATE](#110-DATE)
+		- [1.10.1. _Format Time](#1101-Format-Time)
+		- [1.10.2. _Declare date](#1102-Declare-date)
+		- [1.10.3. _Date Method](#1103-Date-Method)
+	- [1.11. CONDITIONAL](#111-CONDITIONAL)
+		- [1.11.1. _If](#1111-If)
+		- [1.11.2. _Switch](#1112-Switch)
+	- [1.12. LOOP](#112-LOOP)
+		- [1.12.1. _For](#1121-For)
+		- [1.12.2. _While](#1122-While)
+		- [1.12.3. _Break](#1123-Break)
+		- [1.12.4. _Continue](#1124-Continue)
+	- [1.13. LABLE](#113-LABLE)
+	- [1.14. METHOD/ FUNCTION](#114-METHOD-FUNCTION)
+		- [1.14.1. _Define Method](#1141-Define-Method)
+		- [1.14.2. _Call Method](#1142-Call-Method)
+		- [1.14.3. _Parameter on Method](#1143-Parameter-on-Method)
+		- [1.14.4. _Return method](#1144-Return-method)
+		- [1.14.5. _Constructor Method](#1145-Constructor-Method)
+	- [1.15. PACKAGE/ NAMESPACE](#115-PACKAGE-NAMESPACE)
+	- [1.16. IMPORT](#116-IMPORT)
+	- [1.17. EXCEPTION](#117-EXCEPTION)
+	- [1.18. MATH - toán học](#118-MATH---to%C3%A1n-h%E1%BB%8Dc)
+	- [1.19. REGEXP - Regular expression](#119-REGEXP---Regular-expression)
+	- [1.20. DOM Document Object Model - ảnh hưởng html tag](#120-DOM-Document-Object-Model---%E1%BA%A3nh-h%C6%B0%E1%BB%9Fng-html-tag)
+		- [1.20.1. _Lưu ý DOM](#1201-L%C6%B0u-%C3%BD-DOM)
+	- [1.21. FORM VALIDATION - KT NHẬP LIỆU](#121-FORM-VALIDATION---KT-NH%E1%BA%ACP-LI%E1%BB%86U)
+		- [1.21.1. _form tag](#1211-form-tag)
+		- [1.21.2. _check on js](#1212-check-on-js)
+	- [1.22. COOKIES](#122-COOKIES)
+		- [1.22.1. _Storing/change Cookies](#1221-Storingchange-Cookies)
+		- [1.22.2. _Read cookie](#1222-Read-cookie)
+		- [1.22.3. _Delete cookie](#1223-Delete-cookie)
+		- [1.22.4. _Some Functions](#1224-Some-Functions)
+	- [1.23. PAGE REDIRECT - điều hướng trang](#123-PAGE-REDIRECT---%C4%91i%E1%BB%81u-h%C6%B0%E1%BB%9Bng-trang)
+		- [1.23.1. _Refresh Page](#1231-Refresh-Page)
+	- [1.24. DIALOG BOX](#124-DIALOG-BOX)
+	- [1.25. VOID - Gọi 1 biểu thức, hàm và trả về undefine](#125-VOID---G%E1%BB%8Di-1-bi%E1%BB%83u-th%E1%BB%A9c-h%C3%A0m-v%C3%A0-tr%E1%BA%A3-v%E1%BB%81-undefine)
+	- [1.26. AJAX - LẤY DỮ LIỆU KO CẦN LOAD PAGE](#126-AJAX---L%E1%BA%A4Y-D%E1%BB%AE-LI%E1%BB%86U-KO-C%E1%BA%A6N-LOAD-PAGE)
+	- [1.27. Một số hàm cần thiết](#127-M%E1%BB%99t-s%E1%BB%91-h%C3%A0m-c%E1%BA%A7n-thi%E1%BA%BFt)
+
+## 1.1. FILE TYPE
 
 *.js *.html
 
-## HELLO WORLD
+## 1.2. HELLO WORLD
 
 ```html
 <!-- Script tag đặt trong Head or Body tag --!>
@@ -25,22 +91,22 @@
 <script src ='/js/myScript.js' />
 ```
 
-## COMMENT
+## 1.3. COMMENT
 
 ```js
 // Single Line comment
 /*
 * Multiline comment
- */
- ```
+*/
+```
 
-## VARIABLE
+## 1.4. VARIABLE
 
 Number
 String
 Boolean
 
-### _Declare Variable
+### 1.4.1. _Declare Variable
 
 ```js
 var name, age, right; //=undefined
@@ -49,26 +115,26 @@ var age = 30.4; //Number type
 var right = true; //Boolean type
 ```
 
-### _Assign Variable
+### 1.4.2. _Assign Variable
 
 ```js
 name = "nghia";
 ```
 
-### _Constant/ final
+### 1.4.3. _Constant/ final
 
 ```js
 const age = 30; //can not change value
 let name; ... if (){ let name; } //like var, but 2nd name difrence 1st name, js Es6
 ```
 
-### _Check Variable Type
+### 1.4.4. _Check Variable Type
 
 ```js
 typeof num == "number"
 ```
 
-## OBJECT
+## 1.5. OBJECT
 
 - Aggregation. Tính thu nạp.
 - Abstraction (Tính trừu tượng). Ko có.
@@ -76,7 +142,7 @@ typeof num == "number"
 - Inheritance (Tính kế thừa)
 - Polymophirsm (Tính đa hình)
 
-### _Create Object
+### 1.5.1. _Create Object
 
 ```js
 var batman = {
@@ -94,13 +160,13 @@ console.log(batman.sayHi());
 console.log(batman.abc);
 ```
 
-### _Add new properties
+### 1.5.2. _Add new properties
 
 ```js
 batman.abc = "Iabcde" ;
 ```
 
-### _Object Constructor - tạo cấu trúc Object - like Class
+### 1.5.3. _Object Constructor - tạo cấu trúc Object - like Class
 
 ```js
 function Person (name, street) {
@@ -112,7 +178,7 @@ function Person (name, street) {
 }
 ```
 
-### _Add Reference, method - thêm thuộc tính, phương thức
+### 1.5.4. _Add Reference, method - thêm thuộc tính, phương thức
 
 ```js
 Person.prototype.sayGRR = function(){
@@ -120,14 +186,14 @@ Person.prototype.sayGRR = function(){
 }
 ```
 
-### _Declare Object
+### 1.5.5. _Declare Object
 
 ```js
 var batman = new Person("Batman", "12 GodHam");
 console.log(batman.sayHi()); //_Using
 ```
 
-### _Kế thừa
+### 1.5.6. _Kế thừa
 
 ```js
 // Đối tượng User thừa kế tất cả các phương thức, thuộc tính của đối tượng Person
@@ -135,13 +201,13 @@ function User(name) { this.name = name; }; //Tạo cấu trúc cho đối tượ
 User.prototype = new Person();
 ```
 
-### _Check Instance - kiểm tra Kiểu dữ liệu
+### 1.5.7. _Check Instance - kiểm tra Kiểu dữ liệu
 
 ```js
 console.log(batman instanceof Person);
 ```
 
-### _Pass by reference, thay đổi thuộc tính qua reference ra khỏi method
+### 1.5.8. _Pass by reference, thay đổi thuộc tính qua reference ra khỏi method
 
 ```js
 function changeName (person) { person.name = "new name"; }
@@ -149,7 +215,7 @@ changeName(batman);
 console.log(batman.name);
 ```
 
-## ENUM
+## 1.6. ENUM
 
 ```js
 var sizes = {
@@ -161,7 +227,7 @@ var sizes = {
 sizes.SMALL //Call using
 ```
 
-## OPERATOR
+## 1.7. OPERATOR
 
 ```js
 + - * / %(modulus)
@@ -177,13 +243,13 @@ sizes.SMALL //Call using
 Condition ? True_value : false_value
 ```
 
-### _Bitwise Operators
+### 1.7.1. _Bitwise Operators
 
 ```js
 &(And) |(or) ^(XOR) ~(not) >>(right shift) <<(left shift) >>>(right shift with zero)
 ```
 
-## STRING
+## 1.8. STRING
 
 ```js
 var str = "nghia";
@@ -212,9 +278,9 @@ str[4] //lấy chuỗi vị trí 4
 .match("regularString") //kt đúng với Regular expression
 ```
 
-## ARRAY
+## 1.9. ARRAY
 
-### _Declare
+### 1.9.1. _Declare
 
 ```js
 var fruits = [];
@@ -222,7 +288,7 @@ var fruits = new Array( "apple", "orange");
 var fruits = [ "apple", "orange" ];
 ```
 
-### _Get Item + Functions
+### 1.9.2. _Get Item + Functions
 
 ```js
 fruits[2] //get item at index 2
@@ -238,16 +304,16 @@ fruits[2] //get item at index 2
 .reverse() //đảo ngược mảng
 ```
 
-## DATE
+## 1.10. DATE
 
-### _Format Time
+### 1.10.1. _Format Time
 
 - ISO Date: "2015-03-25" (The International Standard)
 - Short Date: "03/25/2015"
 - Long Date: "Mar 25 2015" or "25 Mar 2015"
 - Full Date: "Wednesday March 25 2015"
 
-### _Declare date
+### 1.10.2. _Declare date
 
 ```js
 var d = new Date("2015-03-25");
@@ -263,7 +329,7 @@ var d = new Date("Wed Mar 25 2015 09:56:24 GMT+0100 (W. Europe Standard Time)");
 var d = new Date(milisecond);
 ```
 
-### _Date Method
+### 1.10.3. _Date Method
 
 ```js
 //UTC ((Universal Time Zone dates) add getUTCDate()...
@@ -280,9 +346,9 @@ var msec = Date.parse( "March 21, 2012" ); //get minisecond between date and 1/1
 var msecs = Date.UTC(2008,9,6);
 ```
 
-## CONDITIONAL
+## 1.11. CONDITIONAL
 
-### _If
+### 1.11.1. _If
 
 ```js
 if (num <= 1) {
@@ -294,7 +360,7 @@ if (num <= 1) {
 }
 ```
 
-### _Switch
+### 1.11.2. _Switch
 
 ```js
 switch (num) {
@@ -306,9 +372,9 @@ switch (num) {
 }
 ```
 
-## LOOP
+## 1.12. LOOP
 
-### _For
+### 1.12.1. _For
 
 ```js
 for (var i=0; i<=10; i++) {
@@ -319,7 +385,7 @@ for (var i in enum1) {
 }
 ```
 
-### _While
+### 1.12.2. _While
 
 ```js
 while (num >= 1){
@@ -332,15 +398,15 @@ do {
 } while (num>=1)
 ```
 
-### _Break
+### 1.12.3. _Break
 
 break; //break out of loop, exit loop
 
-### _Continue
+### 1.12.4. _Continue
 
 continue; //continue at next loop condition
 
-## LABLE
+## 1.13. LABLE
 
 ```js
 lableName : //define lable
@@ -348,15 +414,15 @@ lableName : //define lable
 lableName; //return lable before, do it again
 ```
 
-## METHOD/ FUNCTION
+## 1.14. METHOD/ FUNCTION
 
-### _Define Method
+### 1.14.1. _Define Method
 
 ```js
 function myFun() { ... }
 ```
 
-### _Call Method
+### 1.14.2. _Call Method
 
 ```js
 <input type="button" onclick="myFun()" value="Say Hello">
@@ -364,7 +430,7 @@ function myFun() { ... }
 myFun();
 ```
 
-### _Parameter on Method
+### 1.14.3. _Parameter on Method
 
 ```js
 function sayHello (name, age) {
@@ -373,7 +439,7 @@ function sayHello (name, age) {
 sayHello("nghia", 30); // call - using, log: Hello nghia30
 ```
 
-### _Return method
+### 1.14.4. _Return method
 
 ```js
 function sayHello (name, age) {
@@ -383,7 +449,7 @@ function sayHello (name, age) {
 var hello = sayHello("nghia", 30); //call - using
 ```
 
-### _Constructor Method
+### 1.14.5. _Constructor Method
 
 ```js
 var sum = Function("a", "b", "return a+b");
@@ -391,11 +457,11 @@ var sum = function(a, b){ return a+b; };
 document.write(sum(2,3)); //call, =2+3=5
 ```
 
-## PACKAGE/ NAMESPACE
+## 1.15. PACKAGE/ NAMESPACE
 
-## IMPORT
+## 1.16. IMPORT
 
-## EXCEPTION
+## 1.17. EXCEPTION
 
 ```js
 try{
@@ -403,7 +469,7 @@ try{
 } catch(ex) {...} finally {...}
 ```
 
-## MATH - toán học
+## 1.18. MATH - toán học
 
 ```js
 //Properties
@@ -437,7 +503,7 @@ tan() Returns the tangent of a number.
 toSource() Returns the string "Math".
 ```
 
-## REGEXP - Regular expression
+## 1.19. REGEXP - Regular expression
 
 ```js
 var pattern = /pattern/modifiers; //ex: /[0-9]*/g
@@ -451,7 +517,7 @@ pattern
 .exec("nghia") // Tests for a match in a string. Returns the first match
 ```
 
-## DOM Document Object Model - ảnh hưởng html tag
+## 1.20. DOM Document Object Model - ảnh hưởng html tag
 
 ```js
 var tag = document.getElementById("id_name");
@@ -469,7 +535,7 @@ tag.removeAttribute("class");
 tag.style.backgroundColor = "red";
 ```
 
-### _Lưu ý DOM
+### 1.20.1. _Lưu ý DOM
 
 ```js
 //Js trong tag Header, muốn tìm thấy tag html phải đặt trong sự kiện onload. Đợi page load xong.
@@ -478,9 +544,9 @@ window.onload = function(){
 }
 ```
 
-## FORM VALIDATION - KT NHẬP LIỆU
+## 1.21. FORM VALIDATION - KT NHẬP LIỆU
 
-### _form tag
+### 1.21.1. _form tag
 
 ```html
 <form action="/cgi-bin/test.cgi" name="myForm" onsubmit="return(validate());">...
@@ -488,7 +554,7 @@ window.onload = function(){
 </form>
 ```
 
-### _check on js
+### 1.21.2. _check on js
 
 ```js
 //Check null
@@ -513,31 +579,31 @@ function validateEmail() {
 }
 ```
 
-## COOKIES
+## 1.22. COOKIES
 
 Save data on the Browser, like: user's session, preference, purchases, commission...
 
-### _Storing/change Cookies
+### 1.22.1. _Storing/change Cookies
 
 ```js
 document.cookie = "key1=value1;key2=value2;expires=date";
 document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
 ```
 
-### _Read cookie
+### 1.22.2. _Read cookie
 
 ```js
 var x = document.cookie;
 ```
 
-### _Delete cookie
+### 1.22.3. _Delete cookie
 
 ```js
 // Don't set value, expires is pass date
 document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;" ;
 ```
 
-### _Some Functions
+### 1.22.4. _Some Functions
 
 ```js
 function setCookie(cname, cvalue, exdays) {
@@ -565,9 +631,9 @@ function getCookie(cname) {
 }
 ```
 
-## PAGE REDIRECT - điều hướng trang
+## 1.23. PAGE REDIRECT - điều hướng trang
 
-### _Refresh Page
+### 1.23.1. _Refresh Page
 
 ```js
 <a href="javascript:location.reload(true)">Refresh Page</a>
@@ -579,7 +645,7 @@ setTimeout("location.reload(true);", 5000);
 window.location="http://www.google.com";
 ```
 
-## DIALOG BOX
+## 1.24. DIALOG BOX
 
 ```js
 alert("dialog with Ok button");
@@ -591,7 +657,7 @@ var cf = confirm("ok or cancel");
 var name = prompt("Get Name", "Your name is here");
 ```
 
-## VOID - Gọi 1 biểu thức, hàm và trả về undefine
+## 1.25. VOID - Gọi 1 biểu thức, hàm và trả về undefine
 
 ```js
 //Gọi đường dẫn trong javascript. Trả về Indefine.
@@ -601,7 +667,7 @@ void(func())
 javascript:void(func())
 ```
 
-## AJAX - LẤY DỮ LIỆU KO CẦN LOAD PAGE
+## 1.26. AJAX - LẤY DỮ LIỆU KO CẦN LOAD PAGE
 
 ```js
 function loadDoc() {
@@ -631,7 +697,7 @@ function loadDoc() {
 </div>
 ```
 
-## Một số hàm cần thiết
+## 1.27. Một số hàm cần thiết
 
 ```js
 document.write("nghia") //write on page.
