@@ -1,6 +1,33 @@
 # 1. Kotlin 1.1 Cú pháp nhanh
 
-<!-- TOC -->autoauto- [1. Kotlin 1.1 Cú pháp nhanh](#1-kotlin-11-cú-pháp-nhanh)auto    - [1.1. File type](#11-file-type)auto    - [1.2. HELLO WORLD](#12-hello-world)auto    - [1.3. COMMENT](#13-comment)auto    - [1.4. VARIABLE](#14-variable)auto        - [1.4.1. số kiểu](#141-số-kiểu)auto        - [1.4.2. String](#142-string)auto    - [1.5. Array - List](#15-array---list)auto        - [1.5.1. Khởi tạo](#151-khởi-tạo)auto        - [1.5.2. Gán dữ liệu](#152-gán-dữ-liệu)auto        - [1.5.3. Phương thức](#153-phương-thức)auto        - [1.5.4. lambda expression](#154-lambda-expression)auto        - [1.5.5. Đặc biệt](#155-đặc-biệt)auto    - [1.6. OPERATOR](#16-operator)auto    - [1.7. CONDITIONAL - if, when, try, break](#17-conditional---if-when-try-break)auto    - [1.8. LOOP - Vòng lặp - for, while](#18-loop---vòng-lặp---for-while)auto    - [1.9. FUNCTION - Hàm](#19-function---hàm)auto    - [1.10. CLASS - Lớp](#110-class---lớp)auto        - [1.10.1. interface](#1101-interface)auto        - [1.10.2. Lớp trừu tượng](#1102-lớp-trừu-tượng)auto        - [1.10.3. Override - Kế thừa](#1103-override---kế-thừa)auto        - [1.10.4. Generic - T type](#1104-generic---t-type)auto        - [1.10.5. Enum](#1105-enum)auto        - [1.10.6. Khác](#1106-khác)auto    - [1.11. PACKAGE](#111-package)auto    - [1.12. Special](#112-special)auto        - [1.12.1. Gọi đa phưong thức khởi tạo](#1121-gọi-đa-phưong-thức-khởi-tạo)auto        - [1.12.2. Coroutines, like thread](#1122-coroutines-like-thread)autoauto<!-- /TOC -->
+- [1. Kotlin 1.1 Cú pháp nhanh](#1-Kotlin-11-C%C3%BA-ph%C3%A1p-nhanh)
+  - [1.1. File type](#11-File-type)
+  - [1.2. HELLO WORLD](#12-HELLO-WORLD)
+  - [1.3. COMMENT](#13-COMMENT)
+  - [1.4. VARIABLE](#14-VARIABLE)
+    - [1.4.1. số kiểu](#141-s%E1%BB%91-ki%E1%BB%83u)
+    - [1.4.2. String](#142-String)
+  - [1.5. Array - List](#15-Array---List)
+    - [1.5.1. Khởi tạo](#151-Kh%E1%BB%9Fi-t%E1%BA%A1o)
+    - [1.5.2. Gán dữ liệu](#152-G%C3%A1n-d%E1%BB%AF-li%E1%BB%87u)
+    - [1.5.3. Phương thức](#153-Ph%C6%B0%C6%A1ng-th%E1%BB%A9c)
+    - [1.5.4. lambda expression](#154-lambda-expression)
+    - [1.5.5. Đặc biệt](#155-%C4%90%E1%BA%B7c-bi%E1%BB%87t)
+  - [1.6. OPERATOR](#16-OPERATOR)
+  - [1.7. CONDITIONAL - if, when, try, break](#17-CONDITIONAL---if-when-try-break)
+  - [1.8. LOOP - Vòng lặp - for, while](#18-LOOP---V%C3%B2ng-l%E1%BA%B7p---for-while)
+  - [1.9. FUNCTION - Hàm](#19-FUNCTION---H%C3%A0m)
+  - [1.10. CLASS - Lớp](#110-CLASS---L%E1%BB%9Bp)
+    - [1.10.1. interface](#1101-interface)
+    - [1.10.2. Lớp trừu tượng](#1102-L%E1%BB%9Bp-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng)
+    - [1.10.3. Override - Kế thừa](#1103-Override---K%E1%BA%BF-th%E1%BB%ABa)
+    - [1.10.4. Generic - T type](#1104-Generic---T-type)
+    - [1.10.5. Enum](#1105-Enum)
+    - [1.10.6. Khác](#1106-Kh%C3%A1c)
+  - [1.11. PACKAGE](#111-PACKAGE)
+  - [1.12. Special](#112-Special)
+    - [1.12.1. Gọi đa phưong thức khởi tạo](#1121-G%E1%BB%8Di-%C4%91a-ph%C6%B0ong-th%E1%BB%A9c-kh%E1%BB%9Fi-t%E1%BA%A1o)
+    - [1.12.2. Coroutines, like thread](#1122-Coroutines-like-thread)
 
 ## 1.1. File type
 
