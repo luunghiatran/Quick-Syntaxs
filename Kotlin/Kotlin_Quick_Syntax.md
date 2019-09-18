@@ -1,34 +1,35 @@
 # 1. Kotlin 1.1 Cú pháp nhanh
 
-- [1. Kotlin 1.1 Cú pháp nhanh](#1-Kotlin-11-C%C3%BA-ph%C3%A1p-nhanh)
-  - [1.1. File type](#11-File-type)
-  - [1.2. HELLO WORLD](#12-HELLO-WORLD)
-  - [1.3. COMMENT](#13-COMMENT)
-  - [1.4. VARIABLE](#14-VARIABLE)
-    - [1.4.1. số kiểu](#141-s%E1%BB%91-ki%E1%BB%83u)
-    - [1.4.2. String](#142-String)
-  - [1.5. Array - List](#15-Array---List)
-    - [1.5.1. Khởi tạo](#151-Kh%E1%BB%9Fi-t%E1%BA%A1o)
-    - [1.5.2. Gán dữ liệu](#152-G%C3%A1n-d%E1%BB%AF-li%E1%BB%87u)
-    - [1.5.3. Phương thức](#153-Ph%C6%B0%C6%A1ng-th%E1%BB%A9c)
+- [1. Kotlin 1.1 Cú pháp nhanh](#1-kotlin-11-c%c3%ba-ph%c3%a1p-nhanh)
+  - [1.1. File type](#11-file-type)
+  - [1.2. HELLO WORLD](#12-hello-world)
+  - [1.3. COMMENT](#13-comment)
+  - [1.4. VARIABLE](#14-variable)
+    - [1.4.1. số kiểu](#141-s%e1%bb%91-ki%e1%bb%83u)
+    - [1.4.2. String](#142-string)
+  - [1.5. Array - List](#15-array---list)
+    - [1.5.1. Khởi tạo](#151-kh%e1%bb%9fi-t%e1%ba%a1o)
+    - [1.5.2. Gán dữ liệu](#152-g%c3%a1n-d%e1%bb%af-li%e1%bb%87u)
+    - [1.5.3. Phương thức](#153-ph%c6%b0%c6%a1ng-th%e1%bb%a9c)
     - [1.5.4. lambda expression](#154-lambda-expression)
-    - [1.5.5. Đặc biệt](#155-%C4%90%E1%BA%B7c-bi%E1%BB%87t)
-  - [1.6. OPERATOR](#16-OPERATOR)
-  - [1.7. CONDITIONAL - if, when, try, break](#17-CONDITIONAL---if-when-try-break)
-  - [1.8. LOOP - Vòng lặp - for, while](#18-LOOP---V%C3%B2ng-l%E1%BA%B7p---for-while)
-  - [1.9. FUNCTION - Hàm](#19-FUNCTION---H%C3%A0m)
-  - [1.10. CLASS - Lớp](#110-CLASS---L%E1%BB%9Bp)
+    - [1.5.5. Đặc biệt](#155-%c4%90%e1%ba%b7c-bi%e1%bb%87t)
+  - [1.6. OPERATOR](#16-operator)
+  - [1.7. CONDITIONAL - if, when, try, break](#17-conditional---if-when-try-break)
+  - [1.8. LOOP - Vòng lặp - for, while](#18-loop---v%c3%b2ng-l%e1%ba%b7p---for-while)
+  - [1.9. FUNCTION - Hàm](#19-function---h%c3%a0m)
+  - [1.10. CLASS - Lớp](#110-class---l%e1%bb%9bp)
     - [1.10.1. interface](#1101-interface)
-    - [1.10.2. Lớp trừu tượng](#1102-L%E1%BB%9Bp-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng)
-    - [1.10.3. Override - Kế thừa](#1103-Override---K%E1%BA%BF-th%E1%BB%ABa)
-    - [1.10.4. Call in Class](#1104-Call-in-Class)
-    - [1.10.5. Generic - T type](#1105-Generic---T-type)
-    - [1.10.6. Enum](#1106-Enum)
-    - [1.10.7. Khác](#1107-Kh%C3%A1c)
-  - [1.11. PACKAGE](#111-PACKAGE)
-  - [1.12. Special](#112-Special)
-    - [1.12.1. Gọi đa phưong thức khởi tạo](#1121-G%E1%BB%8Di-%C4%91a-ph%C6%B0ong-th%E1%BB%A9c-kh%E1%BB%9Fi-t%E1%BA%A1o)
-    - [1.12.2. Coroutines, like thread](#1122-Coroutines-like-thread)
+    - [1.10.2. Lớp trừu tượng](#1102-l%e1%bb%9bp-tr%e1%bb%abu-t%c6%b0%e1%bb%a3ng)
+    - [1.10.3. Override - Kế thừa](#1103-override---k%e1%ba%bf-th%e1%bb%aba)
+    - [1.10.4. Call in Class](#1104-call-in-class)
+    - [1.10.5. Generic - T type](#1105-generic---t-type)
+    - [1.10.6. Enum](#1106-enum)
+    - [1.10.7. Khác](#1107-kh%c3%a1c)
+  - [1.11. PACKAGE](#111-package)
+  - [1.12. Special](#112-special)
+    - [1.12.1. Gọi đa phưong thức khởi tạo](#1121-g%e1%bb%8di-%c4%91a-ph%c6%b0ong-th%e1%bb%a9c-kh%e1%bb%9fi-t%e1%ba%a1o)
+    - [Scope Functions (hàm phạm vi trong 1 biến): let, also, apply, with](#scope-functions-h%c3%a0m-ph%e1%ba%a1m-vi-trong-1-bi%e1%ba%bfn-let-also-apply-with)
+    - [1.12.2. Coroutines, like thread](#1122-coroutines-like-thread)
 
 ## 1.1. File type
 
@@ -36,7 +37,7 @@
 
 ## 1.2. HELLO WORLD
 
-```java
+```js
 pakage demo
 
 fun main(args: Array<String>){
@@ -46,14 +47,14 @@ fun main(args: Array<String>){
 
 ## 1.3. COMMENT
 
-```java
+```js
 // In line Comment
 /* Mutilple comment */
 ```
 
 ## 1.4. VARIABLE
 
-```java
+```js
 var a : String  // = null
 var age = 30
 val PI : Int = 3.14    //constant
@@ -68,7 +69,7 @@ internal // visible inside the same module
 
 ### 1.4.1. số kiểu
 
-```java
+```js
 // Số nguyên
 1 byte = 8 bit = 2^7
 Byte (1byte) Short (2byte)
@@ -83,7 +84,7 @@ Boolean / Char
 
 ### 1.4.2. String
 
-```java
+```js
 // Khởi tạo
 var name : String = "Nghia"
 
@@ -107,7 +108,7 @@ name.replace("a", "b")
 
 ### 1.5.1. Khởi tạo
 
-```java
+```js
 var myArr = arrayOf(1, 2.34, "nghia")
 var myList = listOf("a","b","c")
 var muList : MutableList<Int> = mutableListOf(1,2,3,4)
@@ -117,14 +118,14 @@ var arr2 :Array<Int> = arrayOf(1,2,3)
 
 ### 1.5.2. Gán dữ liệu
 
-```java
+```js
 map["key"] = value
 map.put(3, "x") //add value
 ```
 
 ### 1.5.3. Phương thức
 
-```java
+```js
 myArr[2]
 .add("d")
 .first()
@@ -140,7 +141,7 @@ myArr[2]
 
 ### 1.5.4. lambda expression
 
-```java
+```js
 array
 .filter { it.startsWith("a") }
 .filter { x -> x>0 } //lọc ra
@@ -152,7 +153,7 @@ array
 
 ### 1.5.5. Đặc biệt
 
-```java
+```js
 // Kiểm tra trong mảng "map"
 for ((k, v) in map) {
     println("$k -> $v")
@@ -170,7 +171,7 @@ arr.reversed()  //mảng nghịch đảo
 
 ## 1.6. OPERATOR
 
-```java
+```js
 + - * / %(lấy dư)
 ++ --
 += -= *= /= *=
@@ -182,7 +183,7 @@ a as String (chuyển kiểu)
 
 ## 1.7. CONDITIONAL - if, when, try, break
 
-```java
+```js
 // if
 if () {} if else () {} else {}
 
@@ -210,7 +211,7 @@ loop@ for... break@loop
 
 ## 1.8. LOOP - Vòng lặp - for, while
 
-```java
+```js
 for(i in items){}
 for(index in items.indies) {
     //index=chỉ số, item = items[index]
@@ -223,7 +224,7 @@ while (index < items.size) {
 
 ## 1.9. FUNCTION - Hàm
 
-```java
+```js
 fun sum(a: Int, b: Int) : Int {
     return a+b
 }
@@ -252,7 +253,7 @@ fun Int.percent(percentage: Int)... //Call - Using: 10.percent(50)=10%=5
 
 ## 1.10. CLASS - Lớp
 
-```java
+```js
 class Person {
     init { 
         //khởi tạo 
@@ -275,7 +276,7 @@ var man = Person("nghia")
 
 ### 1.10.1. interface
 
-```java
+```js
 interface Foo {}
 
 //lớp mở, chỉ cho kế thừa, like struct
@@ -287,7 +288,7 @@ open class Name {
 
 ### 1.10.2. Lớp trừu tượng
 
-```java
+```js
 abstract class...{
     override abstract fun...
 }
@@ -295,7 +296,7 @@ abstract class...{
 
 ### 1.10.3. Override - Kế thừa
 
-```java
+```js
 //man Kế thừa person
 class Man(name:String) : Person(name), Foo...
 _Override method
@@ -305,7 +306,7 @@ override val...
 
 ### 1.10.4. Call in Class
 
-```java
+```js
 this.fun    // Call current
 super.fun, super("a")  //Call parent
 super<Foo>.  //Call with parent name
@@ -313,7 +314,7 @@ super<Foo>.  //Call with parent name
 
 ### 1.10.5. Generic - T type
 
-```java
+```js
 class Box<T>(t:T) { var value = t }
 
 //Inner class
@@ -328,7 +329,7 @@ Outer().Inner().   //call
 
 ### 1.10.6. Enum
 
-```java
+```js
 enum class Move {
     UP, DOWN, LEFT, RIGHT
 }
@@ -338,7 +339,7 @@ Move.UP //Using
 
 ### 1.10.7. Khác
 
-```java
+```js
 //Lớp dữ liệu java, tạo sẵn getter, setter, toString, hashCode
 data class... // ~ giống static class
 sealed class...
@@ -356,7 +357,7 @@ open class Person(var name: String, var age: Int) {
 
 ## 1.11. PACKAGE
 
-```java
+```js
 pakage my.demo
 import java.util.*
 ```
@@ -365,7 +366,7 @@ import java.util.*
 
 ### 1.12.1. Gọi đa phưong thức khởi tạo
 
-```java
+```js
 class Turtle {
     fun penDown()
     fun penUp()
@@ -386,21 +387,40 @@ with(myTurtle) {
 }
 ```
 
+### Scope Functions (hàm phạm vi trong 1 biến): let, also, apply, with
+
+- with: để gọi nhiều phương thức(method) cùng 1 đối tượng.
+- let: để check null
+  - Sử dụng một biến trong một phạm vi cụ thể trong đoạn code.
+- apply: để Trả về Object (giống return function)
+  - extension function cho tất cả các loại Object.
+- also: để trả về Object gọi nó (return this)
+- run: kết hợp with & let
+- takeIf and takeUnless
+
+```js
+val number = Random.nextInt(100)
+val evenOrNull = number.takeIf { it % 2 == 0 }  // Thỏa điều kiện
+val oddOrNull = number.takeUnless { it % 2 == 0 }   // Không thỏa điều kiện
+```
+
 ### 1.12.2. Coroutines, like thread
 
-```java
+```js
 fun main(args: Array<String>) {
-   println( "Start" )
+   println("Start")
    // Start a coroutine
    ‎launch {
-   ‎    delay( 1000 )
-   ‎    println( "Hello" )
+       // wait for 1 seconds
+   ‎    delay(1000)
+   ‎    println("Hello")
    ‎}
-    Thread.sleep( 2000 ) // wait for 2 seconds
-    println( "Stop" )
+   // wait for 2 seconds
+    Thread.sleep(2000)
+    println("Stop")
 }
 
 runBlocking {
-    delay( 2000)
+    delay(2000)
 }
 ```
