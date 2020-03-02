@@ -410,7 +410,7 @@ val oddOrNull = number.takeUnless { it % 2 == 0 }   // Không thỏa điều ki�
 fun main(args: Array<String>) {
    println("Start")
    // Start a coroutine
-   ‎launch {
+   ‎GlobalScope.launch {
        // wait for 1 seconds
    ‎    delay(1000)
    ‎    println("Hello")
