@@ -9,6 +9,7 @@
 $
 \s
 ?!([a-z0-9]+) : Not word
+\Q Text \E: Match word (java: Pattern.quote(" Text "))
 ```
 
 ## Example
