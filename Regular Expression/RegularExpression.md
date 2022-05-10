@@ -3,9 +3,10 @@
 ## Rule
 
 ```
-(?i) : All Case
-| : Or
-^
+(?i)    : All Case
+|       : Or
+^       : Bắt đầu 1 dòng
+[^t]    : Tất cả từ, trừ "t" 
 $
 \s
 ?!([a-z0-9]+) : Not word
@@ -30,3 +31,4 @@ $
 ## Reference
 
 - <https://www.vogella.com/tutorials/JavaRegularExpressions/article.html>
+- <https://www.rexegg.com/regex-quickstart.html>
