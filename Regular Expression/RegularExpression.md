@@ -23,7 +23,10 @@ $
 <[^>]*>    
 
 // Lấy "NGHIA 1" hoặc "NGHIA 2" cuối cùng
-(?s:.*\s)\K(NGHIA 1|NGHIA 2)(?!.*(NGHIA 1|NGHIA 2))     
+(?s:.*\s)\K(NGHIA 1|NGHIA 2)(?!.*(NGHIA 1|NGHIA 2)) 
+
+// Ngoại trừ "NullReferenceException" hoặc "updateSurface"
+^(?!NullReferenceException|updateSurface).*$
 ```
 
 ---
