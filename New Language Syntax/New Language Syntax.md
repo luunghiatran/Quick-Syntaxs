@@ -12,12 +12,12 @@ _Using Variable
 _Constant/ final
 _Generic Variable - kiểu chung T
 
+## STRING
 ## ENUM
 _Declare
 _Using
 
 ## OPERATOR
-## STRING
 ## ARRAY
 _Declare
 _Assign
