@@ -190,9 +190,9 @@ if () {} if else () {} else {}
 // when
 when (age) {
     0,1,2,3,4 -> print("baby")
-    ‎in 5..13 -> print("tiểu học")
-    ‎// có thể dùng !in, is, !is, điều kiện
-    ‎else -> { ... }
+    in 5..13 -> print("tiểu học")
+    // có thể dùng !in, is, !is, điều kiện
+    else -> { ... }
 } //Like Switch Case
 
 val job = when {
@@ -266,8 +266,8 @@ class Person (val name: String = "")
 // 2 constructors
 class Person (val name: String){
     constructor (name: String, parent: Person) : this(name) {
-    ‎    parent.children.add(this)
-    ‎}
+        parent.children.add(this)
+    }
 }
 
 //Using Class: Instrances of class, without "new"
@@ -282,7 +282,7 @@ interface Foo {}
 //lớp mở, chỉ cho kế thừa, like struct
 open class Name {
     open fun...
-    ‎open val...
+    open val...
 }
 ```
 
@@ -347,11 +347,11 @@ sealed class...
 // Kiểm tra biến khi tạo class
 open class Person(var name: String, var age: Int) {
     init {
-    ‎   //dùng regex, require để đưa ra yêu cầu biến đầu vào
-    ‎  val regex=Regex(".*//d+.*")
-    ‎  require(!name.matchs(regex)) {"phải đúng yêu cầu"}
-    ‎  require(age>0) {"tuổi phải >0"}
-    ‎}
+       //dùng regex, require để đưa ra yêu cầu biến đầu vào
+      val regex=Regex(".*//d+.*")
+      require(!name.matchs(regex)) {"phải đúng yêu cầu"}
+      require(age>0) {"tuổi phải >0"}
+    }
 }
 ```
 
@@ -410,11 +410,11 @@ val oddOrNull = number.takeUnless { it % 2 == 0 }   // Không thỏa điều ki�
 fun main(args: Array<String>) {
    println("Start")
    // Start a coroutine
-   ‎GlobalScope.launch {
+   GlobalScope.launch {
        // wait for 1 seconds
-   ‎    delay(1000)
-   ‎    println("Hello")
-   ‎}
+       delay(1000)
+       println("Hello")
+   }
    // wait for 2 seconds
     Thread.sleep(2000)
     println("Stop")
