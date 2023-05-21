@@ -9,6 +9,7 @@
     - [1.4.2. String](#142-string)
   - [1.5. Array - List](#15-array---list)
     - [1.5.1. Khởi tạo](#151-khởi-tạo)
+    - [Mảng đặc biệt](#mảng-đặc-biệt)
     - [1.5.2. Gán dữ liệu](#152-gán-dữ-liệu)
     - [1.5.3. Phương thức](#153-phương-thức)
     - [1.5.4. lambda expression](#154-lambda-expression)
@@ -110,10 +111,24 @@ name.replace("a", "b")
 
 ```kotlin
 var myArr = arrayOf(1, 2.34, "nghia")
-var myList = listOf("a","b","c")
-var muList : MutableList<Int> = mutableListOf(1,2,3,4)
-var map = mapOf("a" to 1, "b" to 2)
 var arr2 :Array<Int> = arrayOf(1,2,3)
+
+var myList = listOf("a","b","c")
+
+// support ADD, REMOVE item
+var muList : MutableList<Int> = mutableListOf(1,2,3,4)  
+```
+
+### Mảng đặc biệt
+
+```swift
+// Item with key
+var map = mapOf("a" to 1, "b" to 2) 
+var muMap = mutableMapOf("a" to 1, "b" to 2) // support ADD, REMOVE item
+
+// Non-matching item 
+var set = setOf<Int>(1, 2, 3, 4)
+var muSet = mutableSetOf(1, 2, 3, 4) // support ADD, REMOVE item
 ```
 
 ### 1.5.2. Gán dữ liệu
