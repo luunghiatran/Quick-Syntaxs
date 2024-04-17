@@ -412,3 +412,4 @@ System.out.println("Total time for Main Project: " + mainProject.getTime());
 
 - https://neetcode.io/courses/lessons/8-design-patterns
 - https://viblo.asia/p/composite-design-pattern-tro-thu-dac-luc-cua-developers-Qbq5QBk3KD8
+- https://sourcemaking.com/design_patterns
